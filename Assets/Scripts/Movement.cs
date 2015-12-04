@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public Vector3 gravity;
     public Vector3 flapVelocity;
 
+    public float horizontalSpeed = 1f;
     public float maxBirdSpeed = 5f;
 
     float birdAngle = 0;
@@ -21,11 +22,19 @@ public class Movement : MonoBehaviour
           This means that the birds dropping speed will get faster as time passes. */
 
         birdVelocity += gravity * Time.deltaTime;
+        birdVelocity.x = horizontalSpeed;
 
         //This section checks to see if the bird has flapped and if it has then it adds the flaps velocity to the bu
         if(birdFlapped == true)
         {
             birdFlapped = false;
+
+            //This prevents falling directly after a flap
+            if(birdVelocity.y < 0)
+            {
+                birdVelocity.y = 0;
+            }
+
             birdVelocity += flapVelocity;
         }
 
@@ -33,15 +42,6 @@ public class Movement : MonoBehaviour
         birdVelocity = Vector3.ClampMagnitude(birdVelocity, maxBirdSpeed);
 
         transform.position += birdVelocity * Time.deltaTime;
-
-        //This goes from 0 to -90 degrees by the birds maximum speed (This section was taken from a Unity Tutorial on YouTube)
-
-        if(birdVelocity.y < 0)
-        {
-            birdAngle = Mathf.Lerp(0, -90, birdVelocity.y / maxBirdSpeed);
-        }
-
-        transform.rotation = Quaternion.Euler(0, 0, birdAngle);
     }
 
     // Use this for initialization
