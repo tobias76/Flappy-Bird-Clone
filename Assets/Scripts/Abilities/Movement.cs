@@ -3,15 +3,13 @@ using System.Collections;
 
 public class Movement : MonoBehaviour
 {
-    Vector3 birdVelocity = Vector3.zero;
+    Vector3 birdVelocity;
 
     public Vector3 gravity;
     public Vector3 flapVelocity;
 
     public float horizontalSpeed = 1f;
     public float maxBirdSpeed = 5f;
-
-    float birdAngle = 0;
 
     bool birdFlapped = false;
 
