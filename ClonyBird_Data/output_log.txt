@@ -1,3 +1,10 @@
+Mono path[0] = 'E:/Programming/Source Code/C#/Flappy Bird Extreme/ClonyBird_Data/Managed'
+Mono path[1] = 'E:/Programming/Source Code/C#/Flappy Bird Extreme/ClonyBird_Data/Mono'
+Mono config path = 'E:/Programming/Source Code/C#/Flappy Bird Extreme/ClonyBird_Data/Mono/etc'
+PlayerConnection initialized from E:/Programming/Source Code/C#/Flappy Bird Extreme/ClonyBird_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55163
+Multi-casting "[IP] 10.150.8.119 [Port] 55163 [Flags] 2 [Guid] 1738059104 [EditorId] 3168079334 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-2IVBBJE) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [10.150.8.119:55163]
 Initialize engine version: 5.2.3f1 (f3d16a1fa2dd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -14,22 +21,18 @@ Platform assembly: E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_D
 Loading E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.095 seconds
+- Completed reload, in  0.066 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI.Hid> Failed to create device file:
  2 The system cannot find the file specified.
 
  
-(Filename:  Line: 54)
+(Filename: C:/buildslave/unity/build/PlatformDependent/Win/RawInput.cpp Line: 54)
 
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: E:\Programming\Source Code\C#\Flappy Bird Extreme\ClonyBird_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1d6c -> priority: 1 
+  Thread -> id: 1f14 -> priority: 1 
