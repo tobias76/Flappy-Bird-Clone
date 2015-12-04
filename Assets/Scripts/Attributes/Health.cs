@@ -28,6 +28,15 @@ public class Health : MonoBehaviour
         }
     }
 
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Death on collision with enemy
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
         // Is this a shot?
