@@ -1,15 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Death on collision with ground
+        if (collision.gameObject.tag == "Ground")
+        {
+            Destroy(gameObject);
+
+            // Restarts the game on the players death
+            Application.LoadLevel(Application.loadedLevel);
+        }
+    }
+
+
+    // Update is called once per frame
+    void Update()
     {
         // 5 - Shooting
         bool shoot = Input.GetMouseButtonDown(0);
