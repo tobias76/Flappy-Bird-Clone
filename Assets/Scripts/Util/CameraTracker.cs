@@ -16,7 +16,7 @@ public class CameraTracker : MonoBehaviour
         // If no object has the player tag then it prints to the console
         if (playerGameObject == null)
         {
-            Debug.LogError("No players found");
+            Debug.LogError("No object with the tag 'Player' found.");
             return;
         }
         // This checks for any game object with the tag "Player" (This is flappy) and sets the player value as its transform

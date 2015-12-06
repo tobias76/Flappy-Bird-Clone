@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Movement : MonoBehaviour
 {
-    public Vector3 birdVelocity;
+    public Vector3 birdVelocity = Vector3.zero;
 
     public Vector3 gravity;
     public Vector3 flapVelocity;
